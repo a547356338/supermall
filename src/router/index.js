@@ -5,7 +5,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 
-const routers = [
+const routes = [
   {
     path: '',
     redirect: '/home'
@@ -30,7 +30,7 @@ const routers = [
 
 // 创建路由对象
 const router = new VueRouter({
-  routers,
+  routes,
   mode: 'history'
 })
 

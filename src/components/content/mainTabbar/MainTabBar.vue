@@ -40,6 +40,7 @@ import TabBar from '../../common/tabbar/TabBar'
 import TabBarItem from '../../common/tabbar/TabBarItem'
 
 export default {
+  name: 'MainTabBar',
   components: {
     TabBar,
     TabBarItem
