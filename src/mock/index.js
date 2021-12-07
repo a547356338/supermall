@@ -37,3 +37,5 @@ Mock.mock('/api/figure', () => {
     data: list
   }
 })
+
+// 商品列表数据

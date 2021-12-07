@@ -12,3 +12,34 @@ export function getMock() {
     url: '/meun'
   })
 }
+
+
+export function getHomeGoods(type, page) {
+  return require({
+    url: '/home/data',
+    params: {
+      type,
+      page
+    }
+  })
+}
+
+
+export class Shop {
+  constructor(shopInfo) {
+    this.logo = shopInfo.shopLogo;
+    this.name = shopInfo.name;
+    this.fans = shopInfo.cFans
+  }
+}
+
+
+// 整合数据
+export class Goods {
+  constructor(itemInfo, columns, services) {
+    this.title = itemInfo.title
+    this.desc = itemInfo.desc
+    this.columns = columns
+    this.services = services
+  }
+}
